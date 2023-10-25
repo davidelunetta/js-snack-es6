@@ -90,3 +90,31 @@ for (const bici of biciDaCorsa) {
 
 // Stampa la bici con il peso minore utilizzando destructuring e template literal
 console.log(`La bici più leggera è ${biciLeggera.nome} peso ${biciLeggera.peso} kg.`);
+
+  // SNACK 4
+
+  // Funzione per generare un numero casuale tra min e max (inclusi)
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Creiamo un array di oggetti squadra
+const squadreDiCalcio = [
+  { nome: "Palermo", puntiFatti: 0, falliSubiti: 0 },
+  { nome: "Milan", puntiFatti: 0, falliSubiti: 0 },
+  { nome: "Roma", puntiFatti: 0, falliSubiti: 0 },
+  { nome: "Genoa", puntiFatti: 0, falliSubiti: 0 },
+  
+];
+
+for (let squadra of squadreDiCalcio) {
+  squadra.puntiFatti = getRandomNumber(0, 100);
+  squadra.falliSubiti = getRandomNumber(0, 50);
+}
+const squadreConNomiEFalli = squadreDiCalcio.map(({ nome, falliSubiti }) => ({ nome, falliSubiti }));
+
+console.log("Squadre di calcio originali:");
+console.log(squadreDiCalcio);
+
+console.log("\nSquadre con nomi e falli subiti:");
+console.log(squadreConNomiEFalli);
