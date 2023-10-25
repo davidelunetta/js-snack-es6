@@ -36,7 +36,7 @@ const persone = [
     arrayOggetti.push(oggettoPersona);
   });
   
-  console.log(arrayOggetti);
+  // console.log(arrayOggetti);
   
 // SNACK 2
 
@@ -61,6 +61,32 @@ const highGradesStudents = students.filter(student => student.Grades > 70);
 const highGradesAndIdStudents = students.filter(student => student.Grades > 70 && student.id > 120);
 
 // Stampa i risultati
-console.log("Nomi in maiuscolo:", upperCaseNames);
-console.log("Studenti con voti superiori a 70:", highGradesStudents);
-console.log("Studenti con voti superiori a 70 e id > 120:", highGradesAndIdStudents);
+
+
+// console.log("Nomi in maiuscolo:", upperCaseNames);
+// console.log("Studenti con voti superiori a 70:", highGradesStudents);
+// console.log("Studenti con voti superiori a 70 e id > 120:", highGradesAndIdStudents);
+
+
+// SNACK 3
+
+// Creazione dell'array di oggetti
+const biciDaCorsa = [
+  { nome: "Canyon", peso: 7.7 },
+  { nome: "Cube", peso: 7.1 },
+  { nome: "Giant", peso: 8.1 },
+  { nome: "Trek", peso: 7.9 },
+  { nome: "Pinarello", peso: 8.6 },
+];
+
+// Trova la bici con il peso minore
+let biciLeggera = biciDaCorsa[0]; 
+
+for (const bici of biciDaCorsa) {
+  if (bici.peso < biciLeggera.peso) {
+    biciLeggera = bici;
+  }
+}
+
+// Stampa la bici con il peso minore utilizzando destructuring e template literal
+console.log(`La bici più leggera è ${biciLeggera.nome} peso ${biciLeggera.peso} kg.`);
