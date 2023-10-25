@@ -17,3 +17,7 @@ SNACK 3
 Il software crea un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Infine stampa in console la bici con peso minore.
+
+SNACK 4
+Il software crea un array di oggetti:
+Gli oggetti che in questo caso saranno delle squadre di calcio avranno come proprietà: nome, punti fatti, falli subiti.
