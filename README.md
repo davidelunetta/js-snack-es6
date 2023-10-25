@@ -12,3 +12,8 @@ Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e som
 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista   contenente il loro nome tutto in maiuscolo
 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+
+SNACK 3
+Il software crea un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Infine stampa in console la bici con peso minore.
